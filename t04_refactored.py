@@ -21,16 +21,15 @@ import random
 from time import sleep
 
 delay = 1.0          # change to 0.0 for testing/speed runs; larger for dramatic effect!
-user = ""
 dead = False
 
 
 def intro():
     """
-    Introduction text for the story. Don't modify this function
-    :return: None
+    Introduction text for the story. Don't modify this function.
+
+    :return: the user's name, captured from user input
     """
-    global user                            # You need this to be able to modify the user's name
     user = input("What do they call you, unworthy adversary? ")
     print()
     print("Welcome,", user, ", to the labyrinth")
@@ -43,14 +42,18 @@ def intro():
     print("Staying here is certainly not wise. You must find your way out.")
     print()
     sleep(delay)
+    return user
 
 
-def end_story():
+def end_story(user):
     """
     This is the ending to the story. Don't modify this function, either.
+
+    :param user: the user's name
+
     :return: None
     """
-    print("Congratulations, you have made it to the end of this... strange... adventure. I hope you feel accomplished.")
+    print("Congratulations, " + user + ", you have made it to the end of this... strange... adventure. I hope you feel accomplished.")
     print()
     print()
     print()
@@ -158,7 +161,7 @@ def scott_adventure():
 
     if direction == "North":
         # Good choice!
-        print(user, ", you are still trapped in the dark, but someone else is there with you now! I hope they're friendly...")
+        print("You are still trapped in the dark, but someone else is there with you now! I hope they're friendly...")
         sleep(delay)
     elif direction == "South":
         # Oh... Bad choice
@@ -184,12 +187,12 @@ def main():
     The main function, where the program starts.
     :return: None
     """
-    intro()
+    user = intro()
     paths = [scott_adventure, team_1_adv, team_2_adv, team_3_adv, team_4_adv, team_5_adv, team_6_adv, team_7_adv, team_8_adv, team_9_adv, team_10_adv, team_11_adv, team_12_adv, team_13_adv, team_14_adv, team_15_adv, team_16_adv]
     random.shuffle(paths)                               # Shuffles the order of paths, so each adventure is different
     for i in range(len(paths)):
         paths[i]()                                      # Runs each function in the paths list
-    end_story()
+    end_story(user)
 
 
 main()
