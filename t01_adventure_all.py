@@ -68,6 +68,7 @@ if dead == True:
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-anne-joseph
+# Team 1
 
 if direction == "East":
     #Bravo!
@@ -87,7 +88,7 @@ if dead == True:
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-tayttum-aden
-
+# Team 2
 
 direction = input("The squirrel asks you 'WHICH PATH WILL YOU TAKE?!'[Right, Left or Straight]")
 
@@ -130,6 +131,7 @@ if dead == True:
     quit()
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-cohen
+# Team 3
 
 response = input ("The true love of your life awaits at the bottom of the stairs. Time is short, and you must whisper something in his/her ear. How does s/he respond? [cry / embrace / laugh]")
 
@@ -169,6 +171,7 @@ if dead==True:
     quit()
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-berucha-susan
+# Team 4
 
 print()
 sleep(delay)
@@ -212,6 +215,7 @@ print("Good luck on your next adventure!")
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-natasha-ricardo-and-john
+# Team 5
 
 # The next chapter.
 direction = input("Which direction would you like to go now? [North/South/East/West]")
@@ -243,6 +247,7 @@ if dead == True:
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-annette-and-azah
+# Team 6
 
 print("Hurray! You see a light in the distance! Because you are so light deprived, you immediately go towards it and find the side a mountain.")
 print("Now you have to decide which way to go.")
@@ -298,6 +303,7 @@ if dead == True:
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-arlee-and-bethanie
+# Team 7
 
 direction = input("Would you like to go deeper into the cave or back to beginning?[deeper/back to beginning]")
 
@@ -364,7 +370,7 @@ if direction == "back to beginning":
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-david-sahet
-
+# Team 8
 
 if direction == "North":
     # Changes variable direction to enter the next block of conditionals.
@@ -398,6 +404,7 @@ if dead == True:
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-eli-robert
+# Team 9
 
 print("")
 print("You see a chair to you left, 'odd place for a chair,' you think.")
@@ -428,6 +435,7 @@ if dead == True:
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-erin-ezra
+# Team 10
 
 print("You encounter a set of three doors, which door do you take? [Door 1/Door 2/Door 3]")
 direction = input()
@@ -479,6 +487,7 @@ if dead == True:
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-cortesj-brownky
+# Team 11
 
 if direction == "North":
     print()
@@ -535,6 +544,7 @@ if dead == True:
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-kaleb-robinson-siso-mashilo
+# Team 12
 
 print ()
 print ("Warrior you have now entered the belly of the beast")
@@ -583,7 +593,7 @@ elif action == "Shield":
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-giorgi-lomia-robert-hogsed
-
+# Team 13
 
 print()
 print(username, " in front of you, you see a cliff of unconquerable proportions")
@@ -642,7 +652,7 @@ else :
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-taran-ahad-gerardo
-
+# Team 14
 
 print("You've come to across two separate tunnels.")
 print()
@@ -675,6 +685,7 @@ if dead == True:
 
 #########################################################################################################
 # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-miranda-flannery-montana-hite
+# Team 15
 
 print()
 print("Due to a mysterious person in the cave (whether or not you've met them yet),")
@@ -744,9 +755,3 @@ if dead == True:
 
 
 #########################################################################################################
-
-
-
-
-
-

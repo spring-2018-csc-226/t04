@@ -58,82 +58,82 @@ def end_story():
     print("Now go away.")
 
 
-def table_1_adv():
+def team_1_adv():
     pass
     # TODO Add your code here
 
 
-def table_2_adv():
+def team_2_adv():
     pass
     # TODO Add your code here
 
 
-def table_3_adv():
+def team_3_adv():
     pass
     # TODO Add your code here
 
 
-def table_4_adv():
+def team_4_adv():
     pass
     # TODO Add your code here
 
 
-def table_5_adv():
+def team_5_adv():
     pass
     # TODO Add your code here
 
 
-def table_6_adv():
+def team_6_adv():
     pass
     # TODO Add your code here
 
 
-def table_7_adv():
+def team_7_adv():
     pass
     # TODO Add your code here
 
 
-def table_8_adv():
+def team_8_adv():
     pass
     # TODO Add your code here
 
 
-def table_9_adv():
+def team_9_adv():
     pass
     # TODO Add your code here
 
 
-def table_10_adv():
+def team_10_adv():
     pass
     # TODO Add your code here
 
 
-def table_11_adv():
+def team_11_adv():
     pass
     # TODO Add your code here
 
 
-def table_12_adv():
+def team_12_adv():
     pass
     # TODO Add your code here
 
 
-def table_13_adv():
+def team_13_adv():
     pass
     # TODO Add your code here
 
 
-def table_14_adv():
+def team_14_adv():
     pass
     # TODO Add your code here
 
 
-def table_15_adv():
+def team_15_adv():
     pass
     # TODO Add your code here
 
 
-def table_16_adv():
+def team_16_adv():
     pass
     # TODO Add your code here
 
@@ -185,11 +185,10 @@ def main():
     :return: None
     """
     intro()
-    paths = [scott_adventure, table_1_adv, table_2_adv, table_3_adv, table_4_adv, table_5_adv, table_6_adv, table_7_adv, table_8_adv, table_9_adv, table_10_adv, table_11_adv, table_12_adv, table_13_adv, table_14_adv, table_15_adv, table_16_adv]                # TODO Add your function name to the list
-    random.shuffle(paths)                               # Shuffles the order of paths, so each run is different
+    paths = [scott_adventure, team_1_adv, team_2_adv, team_3_adv, team_4_adv, team_5_adv, team_6_adv, team_7_adv, team_8_adv, team_9_adv, team_10_adv, team_11_adv, team_12_adv, team_13_adv, team_14_adv, team_15_adv, team_16_adv]
+    random.shuffle(paths)                               # Shuffles the order of paths, so each adventure is different
     for i in range(len(paths)):
         paths[i]()                                      # Runs each function in the paths list
-
     end_story()
 
 
