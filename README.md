@@ -1,7 +1,7 @@
 # T04: Adventures in Gitland
 
 Name 1: Giorgi Lomia
-Name 2: Aiden Hoover
+Name 2: Aden Hoover
 Name 3 (if needed): ____________
 
 Repository Link: https://github.com/spring-2018-csc-226/t04.git
