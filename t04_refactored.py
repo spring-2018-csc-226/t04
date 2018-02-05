@@ -17,6 +17,7 @@
 # Acknowledgements:
 #   Original Author: Dr. Scott Heggen
 ######################################################################
+
 import random
 from time import sleep
 
@@ -169,8 +170,35 @@ def team_13_adv():
 
 
 def team_14_adv():
-    pass
-    # TODO Add your code here
+    global dead
+    print("You've come to across two separate tunnels.")
+    print()
+    direction = input("Which way do you go? (Left/Right/Go Back)")
+    if direction == "Left":
+        #Bad choice
+        print("OH NO! The cave collapsed behind you. You'll survive for two more days before dying from lack of oxygen.")
+        dead = True
+
+    elif direction == "Right":
+        #Good choice
+        print("You found a sandwich, gained 10 HP.")
+
+    elif direction == "Go Back":
+        #Neutral choice
+        print("You chickened out! You're still stuck wandering the cave.")
+
+    else:
+        print("You find a wall with a combination lock on it.")
+        die = int (input("Please enter a number 0-100"))
+        if die >= 50:
+            print("You enter the wrong combination and the walls close in around you.")
+            dead = True
+        elif die <= 49:
+            print("The door opens and you continue deeper into the cave.")
+    # TODO Don't forget to check if your user is dead at the end of your chapter!
+    if dead == True:
+        print("You died")
+        quit()
 
 
 def team_15_adv():
