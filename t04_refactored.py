@@ -77,8 +77,46 @@ def team_3_adv():
 
 
 def team_4_adv():
-    pass
-    # TODO Add your code here
+    # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-berucha-susan
+    # Team 4
+    print()
+    global dead
+    sleep(delay)
+    print("You now have three doors in front of you. The first door says, 'ULTIMATE DEATH'. The second door says, 'FREEDOM'. The last door say, 'HAPPINESS AWAITS'.")
+    door = input("Which door do you dare pick? [First/Second/Third]")
+    sleep(delay)
+
+    print()
+    if door == "First":
+        # Good Choice!
+        print("Hahaha, you Daredevil!")
+        print("You cannot be fooled.. or were you ready for this story to be over?")
+        print("Either way, you have found your way to FREEDOM!")
+        sleep(delay)
+        print()
+    elif door == "Second":
+        # Ohhh, better luck next time!
+        print("Ahhhh...")
+        print("Did I say 'Freedom'??")
+        print("I meant DEATH!!!")
+        print("You enter through the door and fall into lava.")
+        print("Look on the bright side, at least you died quickly!")
+        dead = True
+        sleep(delay)
+        print()
+    else:
+        # Neutral choice
+        print("You enter through the door and you are in a land of puppies and kitties! Lucky you!")
+        print("Told you happiness awaits!")
+        print("However, the door disappears behind you and now you have to still find your way out to freedom.")
+        print("Hope you don't have allergies!")
+    sleep(delay)
+
+    if dead:
+        quit()
+        print("Good luck on your next adventure!")
+
+
 
 
 def team_5_adv():
