@@ -62,8 +62,23 @@ def end_story(user):
 
 
 def team_1_adv():
-    pass
-    # TODO Add your code here
+    global dead
+    direction=input("Which way you gon go? [East/West]\n")
+    if direction == "East":
+        # Bravo!
+        print("You are in front of Building 1 and Building 2, both are gigantic and luxurious.")
+    building = input("Which building would you pick? [Building 1/Building 2] \n")
+    if building == "Building 1":
+        # Smart Choice
+        print("Seems someone has a surprise for you...")
+        print("WOW! Welcome to the wonderland where you will be presented a 32 carat diamond Worth $150,000.")
+        dead = False
+    else: # elif building == "Building 2":
+        # Bad Choice
+        print("Welcome to the dragon's home where no one ever survives.")
+        print("You are trying to escape, but the door behind you is already shut, you have no option but wait on the dragon.")
+        dead = True
+    are_you_dead(dead)
 
 
 def team_2_adv():
