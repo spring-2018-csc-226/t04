@@ -164,8 +164,54 @@ def team_12_adv():
 
 
 def team_13_adv():
-    pass
-    # TODO Add your code here
+    global dead
+
+    sleep(delay*2)
+    print("In front of you, you see a cliff of unconquerable proportions \n")
+    print("behind you, you can hear a noise, you have never heard before,")
+    print("it scares you more then anything \n")
+    print("you also spot darkness a bit left of you. \n")
+    print("You have options, climb the cliff, go down into the darkness,")
+    print("or face whatever terrifies you by its mere sound")
+    sleep(delay*3)
+    direction = input("Where do you want to go [Up/Down/Stay]")
+
+    if direction == "Up":
+        print("I just told you it was gigantic, why would you do this? \n")
+        print("you start climbing the cliff, adrenaline is pumping through your veins \n")
+        sleep(delay*2)
+        print("You climb it with ease, but halfway up the cliff you look down,")
+        print("you realize, that you need to calm your nerves, otherwise you will fail,")
+        rest_time = int(input("How many seconds do you want to wait"))
+
+        if rest_time <= 10:
+
+            print("You rest for ",rest_time," seconds")
+            print("you sooth your nerves and reach the top you survive")
+
+        else:
+            print("you grow tired and your hands loose the grip.")
+            print("the height scares you so bad you have a heart attack and fall to your death")
+            print("Oh there goes gravity")
+            dead = True
+    elif direction == "Down":
+        print("You crawl into the darkness. \n")
+        sleep(delay)
+        print("You feel as if you have been crawling forever, but you begin to see a light in the darkness")
+        print("as you get closer to the light, you begin to feel a breeze \n")
+        sleep(delay)
+        print("As you reach the light you realize it is an exit to the cave, you have made it to safety")
+    else:
+        print("Whatever was making that noise, it begins to get closer")
+        print("Your palms are sweaty, knees weak, arms are heavy \n")
+        sleep(delay*2)
+        print("You begin to smell something quite pleasant, you turn to look over your shoulder")
+        print("There standing before you is a chimpanzee carrying a hot plate of spaghetti \n")
+        sleep(delay*2)
+        print("He approaches you and offers the spaghetti to you before going in for a nice big hug. \n")
+        print("The monkey decides to join you in your adventure...")
+    if dead:
+        quit()
 
 
 def team_14_adv():
