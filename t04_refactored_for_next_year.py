@@ -82,9 +82,35 @@ def team_4_adv():
 
 
 def team_5_adv():
-    pass
     # TODO Add your code here
+    # The next chapter.
+    dead = False
+    direction = input("Which direction would you like to go now? [North/South/East/West]")
 
+    if direction == "West":
+        # Good choice.
+        print("You have found food. Now you might not starve to death. Congratulations.")
+        sleep(delay)
+    elif direction == "North":
+        # Bad choice.
+        print("Suddenly you hear a rumbling above you. You look up to see a falling bolder.")
+        sleep(delay)
+        number = int(input("Choose a number to determine your fate. [1-10]"))
+        if number >= 6:
+            # Good choice.
+            print("You see the bolder just in time and dodge out of the way.")
+            print("You are still alive good for you!")
+        else:
+            print("...")
+            print("You have been crushed by a boulder.")
+            dead = True
+    else:
+        # Neutral choice.
+        print("You keep walking until you hit a dead end.")
+        sleep(delay)
+
+    if dead == True:
+        quit()
 
 def team_6_adv():
     pass
