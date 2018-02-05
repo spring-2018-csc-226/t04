@@ -159,8 +159,57 @@ def team_11_adv():
 
 
 def team_12_adv():
-    pass
-    # TODO Add your code here
+    global dead
+    print()
+    print("Warrior you have now entered the belly of the beast")
+    action = input("Be ready to battle, choose a weapon [Sword/ Thor's hammer/ Shield/]")
+
+    if action == "Sword":
+        # Great you're like King arthur now!
+        # Bad choice
+        print("A cage door closes behind you. You hear a large roar in the darkness. You unsheathe your sword to fight. Ahead of you is a giant firebreathing dragon.")
+        sleep(delay)
+        print("You look onto the beast with hesitation. You simply have no defense.")
+        dead = True
+    elif action == "Thor's hammer":
+        # Oh... Bad choice
+        print("A cage door opens behind you. You hear a large roar in the darkness.")
+        sleep(delay)
+        print("You reach for thor's hammer, but struggle to lift it. A large fireball blasts through the darkness and roasts you alive. ")
+        print("END: YOU ARE UNWORTHY.")
+        dead = True
+    elif action == "Shield":
+        # Good choice
+        print("You draw your shield. A cage door closes shut behind you. In front of you emerges a firebreathing dragon.")
+        sleep(delay)
+        shieldaction = input('What does the warrior do? Flee or Stand your ground? [Flee/ Stand]')
+        if shieldaction == "Flee":
+            print("You run to the other side of the arena, ducking behind pillars and dodging fireballs.")
+            sleep(delay)
+            sleep(delay)
+            print("You find another door covered in a cage. You grasp and pull the cage to no avail. Suddenly you feel warm breath on the back of your neck. You close your eyes and give a prayer to the gods.")
+            dead = True
+        elif shieldaction == "Stand":
+            print("You stand tall against the large threat. The monster breathes fire around you, but you block it with your shield")
+            sleep(delay)
+            print("There is fire all around. It begins to puncture your weak shield slowly draining your health.")
+            sleep(delay)
+            sleep(delay)
+            print("Hp=9")
+            print('8,7,6,5,4,3,2,1')
+            sleep(delay)
+            sleep(delay)
+            sleep(delay)
+            print("In a last desperate act of life you throw your shield in the direction of the flame. It lodges into the monsters throat, killing him instantly.")
+            print("The cage door opens you are free.")
+            # YAY you live!
+            dead = False
+    else:
+        print("That was not an option.")
+        return None
+
+    if dead == True:
+        quit()
 
 
 def team_13_adv():
