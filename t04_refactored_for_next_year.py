@@ -83,7 +83,7 @@ def team_4_adv():
 
 def team_5_adv():
     # TODO Add your code here
-    # The next chapter.
+    # The next chapter
     dead = False
     direction = input("Which direction would you like to go now? [North/South/East/West]")
 
