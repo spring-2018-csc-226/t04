@@ -91,57 +91,59 @@ def team_3_adv():
     pass
     # # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-cohen
     # Team 3
+    """
+    Asks for a response then prints the corresponding output. 
+    
+    Asks for amount of days and prints another corresponding output.
+    """
+    t3_question_1()
+    are_you_dead(dead)
+    t3_question_2()
+    are_you_dead(dead)
 
-    #print, print, input
 def t3_question_1():
-    response = input ("The true love of your life awaits at the bottom of the stairs."
-                          "Time is short, and you must whisper something in his/her ear."
-                          "How does s/he respond? [cry / embrace / laugh]")
-
+    global dead
+    print('The true love of your life awaits at the bottom of the stairs.')
+    print('Time is short, and you must whisper something in his/her ear.')
+    while 1:
+        response = input("How does s/he respond? [cry / embrace / laugh]")
         if response == "cry":
-            print("Your resolve weakens and you find yourself unable to kill him."
-              "You sign the document, and your fate is sealed.")
-            are_you_dead(dead)
-
+            print("Your resolve weakens and you find yourself unable to kill him.")
+            print("You sign the document, and your fate is sealed.")
+            dead = True
+            break
         elif response == "embrace":
             print("You stab him in the thigh, and vengeance is yours! You step over his gory body and walk out of the house...")
             sleep(delay)
-
+            break
         elif response == "laugh":
             print("You discover to your chagrin that you cannot enact your plan immediately."
                   "You turn and use the knife on the parsnips and yams. How disappointing, but the romance continues...")
             sleep(delay)
-
-
+            break
         else:
-            input("You have chosen a destiny that is beyond the boundaries of the mind."
-                  "You are incomprehensible. You stare blankly ahead."
-                  "The true love of your life awaits at the bottom of the stairs."
-                  "Time is short, and you must whisper something in his/her ear."
-                  "How does s/he respond? [cry / embrace / laugh]")
+            print("You have chosen a destiny that is beyond the boundaries of the mind.")
+            print("You are incomprehensible. You stare blankly ahead.")
+            print("The true love of your life awaits at the bottom of the stairs.")
+            print("Time is short, and you must whisper something in his/her ear.")
 
 
-
-    second_question = int(input("After weeping your harbor of salty tears and feeling them dry on your cracked cheeks,"
-                                "John Waters style, you decide to bide your time before your next attempt."
-                                "How long do you wait? [length in days]"))
-
-    if second_question < 2:
+def t3_question_2():
+    global dead
+    print("After weeping your harbor of salty tears and feeling them dry on your cracked cheeks,")
+    print("John Waters style, you decide to bide your time before your next attempt.")
+    days = int(input("How long do you wait? [length in days]"))
+    if days < 2:
         print("In your rush to get out of this terrible, horrible, no good situation, you let your plan be discovered. Oops.")
         dead = True
+    elif days >= 7:
+        print("You conniving, meretricious, deceptive, dissembling, disingenious, duplicitous shark!")
+        print("You win. Muhuhahahah. On to your next victim.")
         sleep(delay)
-
-    elif second_question >= 7:
-        print ("You conniving, meretricious, deceptive, dissembling, disingenious, duplicitous shark!"
-               "You win. Muhuhahahah. On to your next victim.")
-        sleep(delay)
-
     else:
-        print ("You are just not quite sure yet about how to proceed. Better keep on truckin'.")
+        print("You are just not quite sure yet about how to proceed. Better keep on truckin'.")
         sleep(delay)
 
-
-    are_you_dead(dead)
 
 ########################################################################################################################
 def team_4_adv():
@@ -354,6 +356,6 @@ def main():
     end_story(user)
 
 
-#main()
-team_3_adv()
+main()
+
 # Adding a comment to demonstrate branching
