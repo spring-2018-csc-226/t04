@@ -239,8 +239,73 @@ def team_14_adv():
 
 
 def team_15_adv():
-    pass
-    # TODO Add your code here
+    #########################################################################################################
+    # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-miranda-flannery-montana-hite
+    # Team 15
+
+    print()
+    print("Due to a mysterious person in the cave (whether or not you've met them yet),")
+    print("you teleport immediately out of any given situation you're in. You now stand")
+    print("at the entrance to the cave. It's pretty out.")
+    print()
+    print("In front of you is a path. One way leads to a river, and the other is so beaten")
+    print("That you would definitely get lost if you tried to use it.")
+    print("However, the cave you were recently forced out of now glows... weird.")
+    decision = input("Where do you go? [Woods/River/Cave]")
+
+    if decision == "River":
+        # Good choice
+        print("")
+        print("You decide to head towards the river. It feels... familiar to you.")
+        print("After following the river for a while, you come across a small boat.")
+        print("It looks like a fisherman's boat, but the fisherman isn't around.")
+        print("")
+        print("You take the boat and ride to the nearest freedom!")
+        print("However, a new danger is on the horizon...")
+
+    elif decision == "Cave":
+        print("")
+        print("You're not sure what's come over you, but you feel the desire to go BACK into the cave.")
+        print("(Moron.)")
+        print("")
+        print("Guarding the front of the cave now is the mystic dragon protector.")
+        print("It should go without saying that you're not a high enough level to beat it.")
+        print("However, you could try to speak to it. I bet it speaks English, right?")
+        dragon_decision = input("Do you commune with the dragon? [Y/N] ")
+        if dragon_decision == "Y":
+            print("")
+            print("The dragon lowers its head to you and billows great smoke.")
+            print('"Before you can pass, you must guess how many scales I have?"')
+            scale_number = int(input("What is your guess?"))
+            if scale_number >= 226:
+                # Neutral choice
+                print("")
+                print("Dragon moves slightly out of the way and you proceed further into the cave.")
+            else:
+                # Bad choice
+                print("")
+                print('"Wrong answer."')
+                print(" The dragon barbeques you, throws you up in the air, and swallows you whole.")
+                dead = True
+        else:
+            # Bad choice
+            print("")
+            print("At your attempt to leave the cave, the dragon stops you and eats you.")
+            print("Sorry bud.")
+            dead = True
+
+    else:
+        # Neutral choice
+        print("")
+        print("You decide to go follow the beaten path deeper into the woods.")
+        print("In front of you is a group of bandits. Finding that you have no valuables,")
+        print("They decide to take you hostage! Good luck, bud.")
+        print("Well, at least you're not dead.")
+
+    if dead == True:
+        quit()
+
+
 
 
 def team_16_adv():
