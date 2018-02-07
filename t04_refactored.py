@@ -436,8 +436,9 @@ def team_10_adv():
     # TODO Add your code here
 
 
-def team_11_adv(direction):
+def team_11_adv():
     global dead
+    direction = input("Which direction do you want to go?")
     if direction == "North":
         print()
         friend = input("Do you approach the man or run away? [Approach/Run Away]")
@@ -455,24 +456,24 @@ def team_11_adv(direction):
         print()
         fight = input("Do you chose to run or fight? [Run/Fight]")
         # For int() feature
-    if fight == "Fight":
-        print()
-        print("The stranger clobbers you with a femur bone from his last victim")
-        print("Now the stranger waits for another lost traveler to feast on.")
-        dead = True
-    # Player Death
-    elif fight == "Run":
-        print()
-        print("You decided to run away but tragically died")
-        print("by stumbling on a in the dark and hitting your head...")
-        sleep(delay)
-        dead = True
-    # Player Won Game
-    else:
-        print()
-        print("You weren't thinking correctly and somehow won after a bloody battle.")
-        sleep(delay)
-        print("Due to sheer luck you survive and stumble out of the darkness!")
+        if fight == "Fight":
+            print()
+            print("The stranger clobbers you with a femur bone from his last victim")
+            print("Now the stranger waits for another lost traveler to feast on.")
+            dead = True
+        # Player Death
+        elif fight == "Run":
+            print()
+            print("You decided to run away but tragically died")
+            print("by stumbling on a in the dark and hitting your head...")
+            sleep(delay)
+            dead = True
+        # Player Won Game
+        else:
+            print()
+            print("You weren't thinking correctly and somehow won after a bloody battle.")
+            sleep(delay)
+            print("Due to sheer luck you survive and stumble out of the darkness!")
 
     # Crappy Win
     if friend == "Run Away":
