@@ -147,8 +147,46 @@ def t3_question_2():
 
 ########################################################################################################################
 def team_4_adv():
-    pass
-    # TODO Add your code here
+    # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-berucha-susan
+    # Team 4
+    print()
+    global dead
+    sleep(delay)
+    print("You now have three doors in front of you. The first door says, 'ULTIMATE DEATH'. The second door says, 'FREEDOM'. The last door say, 'HAPPINESS AWAITS'.")
+    door = input("Which door do you dare pick? [First/Second/Third]")
+    sleep(delay)
+
+    print()
+    if door == "First":
+        # Good Choice!
+        print("Hahaha, you Daredevil!")
+        print("You cannot be fooled.. or were you ready for this story to be over?")
+        print("Either way, you have found your way to FREEDOM!")
+        sleep(delay)
+        print()
+    elif door == "Second":
+        # Ohhh, better luck next time!
+        print("Ahhhh...")
+        print("Did I say 'Freedom'??")
+        print("I meant DEATH!!!")
+        print("You enter through the door and fall into lava.")
+        print("Look on the bright side, at least you died quickly!")
+        dead = True
+        sleep(delay)
+        print()
+    else:
+        # Neutral choice
+        print("You enter through the door and you are in a land of puppies and kitties! Lucky you!")
+        print("Told you happiness awaits!")
+        print("However, the door disappears behind you and now you have to still find your way out to freedom.")
+        print("Hope you don't have allergies!")
+    sleep(delay)
+
+    if dead:
+        quit()
+        print("Good luck on your next adventure!")
+
+
 
 
 def team_5_adv():
@@ -184,8 +222,64 @@ def team_5_adv():
 
 
 def team_6_adv():
-    pass
-    # TODO Add your code here
+    #######################################################################################################
+    # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-annette-and-azah
+    # Team 6 Robert Kaleb
+    global dead
+    print("Hurray! You see a light in the distance! Because you are so light deprived, you immediately go towards it and find the side a mountain.")
+    print("Now you have to decide which way to go.")
+    direction = input("Do you want to climb [Up/Down/Left/Right]")
+
+    if direction == "Up":
+        # Would be a good choice... too bad it's raining!
+        print("You start to climb up, but since it is raining, the rocks are wet and slippery. You lose your grip and fall to your death.")
+        sleep(delay)
+        dead = True
+    elif direction == "Down":
+        # Better choice!
+        print("You start to climb down and realize you're only a few feet from the ground.")
+        print("Unfortunately for you, you step into a nest of vicious fairies. In their anger, they carry you away to Fairy Land.")
+        sleep(delay)
+        dead = False
+    elif direction == "Left":
+        # Hope you're not too afraid of spiders...
+        print("You decided to go to the left, where a narrow rock ledge leads around the corner.")
+        print("You follow the ledge, and discover a staircase going up the mountain.")
+        print("Your curiosity overcomes you, and you decide to climb up the staircase.")
+        sleep(delay)
+        dead = False
+    elif direction == "Right":
+        # So sad to die so close to the ground.
+        print("You turn right at the entrance to the cave and see a ledge leading around the corner of the mountain.")
+        print("You walk along the ledge, but soon realize that the rocks are unstable.")
+        print("Oh no! The rocks begin to tumble out from under you feet. An avalanche begins and rocks start tumbling around you.")
+        sleep(delay)
+        print("You have a few seconds to decide what to do.")
+        print("You see a ledge just above your head and decide to jump for it!")
+        height = int(input("How many feet away is the ledge?"))
+        if height < 5:
+            print("Oops, you didn't reach far enough! You fall into the avalanche and die.")
+            dead = True
+        elif height > 5:
+            print("Good guess! You gauged the correct distance and are dangling on the ledge, holding on for dear life as the avalanche falls around you.")
+            dead = False
+        else:
+            print("Well, that didn't work.")
+            dead = True
+    else:
+        # Neutral choice
+        print("Paralyzed by indecision, you said in the opening of the tunnel, looking out.")
+        sleep(delay)
+        print("The sun sets on your hopes and dream.")
+        dead = False
+
+    # TODO Don't forget to check if your user is dead at the end of your chapter!
+
+    if dead:
+        quit()
+    ###############################################################################################
+        pass
+        # TODO Add your code here
 
 
 def team_7_adv():
