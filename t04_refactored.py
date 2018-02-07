@@ -288,8 +288,46 @@ def team_7_adv():
 
 
 def team_8_adv():
-    pass
+
     # TODO Add your code here
+    global dead
+# Team 8
+
+    direction = input('What do you want to do next? [Ask for help/Run]')
+
+    if direction == "Ask for help":
+        # Good choice
+        print()
+        print("You told them about treasure and asked for company.You told them if you find treasure, you would agree to give them half")
+        print("They agreed to go with you as long as you agree to split up treasure")
+        print()
+        sleep(delay)
+        print("After searching long time, fortunately, you found treasure under rocks")
+        print("You and your partner split the treasure and the two of you make your way to exit of the cave")
+
+    elif direction == "Run":
+        # Bad choice
+        print()
+        print("You decide that that person was too frightening and decided to run for your life.")
+        print()
+        print("It's so dark and you can't see. You trip over a loose rock and fall into a ditch.")
+        print("Your ankle is sprained and you are unable to walk. Reluctantly, you take out your mobile phone and call a friend for help.")
+        print()
+        print("Your friend arrives and eventually finds you hours later. He helps you out of the ditch and you go home empty-handed. :(")
+        dead = True
+
+    else:
+        # Neutral Choice
+        print()
+        print("You start to get bored and hungry while running around aimlessly in the dark")
+        sleep(delay)
+        print()
+        print("After searching for a few hours with no luck, you decide to make your way towards the exit and go home for the day")
+        print("Although you didn't find your treasure this time, you can always come back during your free time and keep searching")
+
+    if dead:
+        quit()
+
 
 
 def team_9_adv():
