@@ -83,8 +83,44 @@ def team_1_adv():
 
 
 def team_2_adv():
-    pass
-    # TODO Add your code here
+    direction = input("The squirrel asks you 'WHICH PATH WILL YOU TAKE?!'[Right, Left or Straight]")
+
+    if direction == "Straight":
+        # Good choice!
+        sleep(delay)
+        print("\nYou are still trapped in the blizzard, but something else is\n"
+              "there with now! Let's hope they like humans\n"
+              "You move along in the forest and you approach a jackass penguin\n"
+              "The jackass penguin greets you by saying, 'hello darling, are you lost?\n"
+              "You reply saying 'yes' as you've never been here before and the penguin nods\n"
+              "The penguin agrees to help you, and hops on your shoulder\n"
+              "You eventually make it to the mysterious world where you are greeted by talking animals.\n"
+              "You are crowned king or queen by a dog\n"
+              "To be continued\n")
+        sleep(delay)
+
+    elif direction == "Left":
+        # Oh... Bad choice
+        print("\nOoo no. Turns out the forest was home to a Killer Fluffy Bunny.\n"
+              "You want to run away. But... it's raining, and pitch black.\n"
+              "You turn and run like hell anyways. The bunny wakes up to the sound of your feet pounding against the wet earth.\n"
+              "The bunny reaches you and eats you alive.\n"
+              "The story ends in your death, YOU CHOSE WRONG!\n")
+        dead = True
+    else:
+        # Neutral choice
+        print("\nYou're in another part of the forest. It is now windy, and very dark. 'Please get me out of here!'\n"
+              "You move along in the forest and you approach a jackass penguin.\n"
+              "The jackass penguin greets you by saying, 'hello dear, are you lost?'\n"
+              "You reply saying 'yes' as you've never been here before and the penguin nods\n"
+              "The penguin rolls his eyes 'Incompetent humans now days, follow me' and he walks off\n"
+              "You follow the penguin and eventually make it to the edge of the forest, where you see a red door.\n"
+              "To be continued\n")
+        sleep(delay)
+
+
+if dead:
+    quit()
 
 
 def team_3_adv():
