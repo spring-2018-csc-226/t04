@@ -4,7 +4,7 @@ Name 1: Tayttum Horine
 
 Name 2: Ahad Zai
 
-Name 3 (if needed): ____________
+Name 3 (if needed): ___________
 
 Repository Link: https://github.com/spring-2018-csc-226/t04.git
 
