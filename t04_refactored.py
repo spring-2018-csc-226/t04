@@ -147,17 +147,16 @@ def team_9_adv():
     def choice_1():
         print("It's a trap! You were forced to attend Berea College for 4 years, get a decent job, and died at the age of 102.")
         dead = True
+
     def choice_2():
         print("You sit in the chair and you wake up 3 hours later, you just wasted 3 hours")
+
     def choice_3():
         print("As you walk away, you find some sneakers with +5 jump on your path.")
         sleep(delay*2)
         print("You try to jump with your new +5 sneakers, you jump and quickly find yourself free from the gravity, your journey should go mush quicker now.")
 
-
-
-
-    def main_9(): # Our main function for our chapter to help us organize.
+    def main_9():
         print("")
         print("You see a chair to you left, 'odd place for a chair,' you think.")
         sleep(delay*2)
@@ -169,9 +168,6 @@ def team_9_adv():
         while choice != "pick up hat" and choice != "sit in chair" and choice != "walk away":
             choice = input("Do you sit in the chair, or pick up the hat? [Pick up hat/Sit in chair/walk away]")
             choice = choice.lower()
-
-
-
             # Different choice outcomes are defined as functions.
         if choice == "pick up hat":
             choice_1()
@@ -179,7 +175,7 @@ def team_9_adv():
             choice_2()
         elif choice == "walk away":
             choice_3()
-        if dead ==True:
+        if dead == True:
             quit()
     main_9()
     # TODO Add your code here
