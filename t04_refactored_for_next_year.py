@@ -17,7 +17,6 @@
 # Acknowledgements:
 #   Original Author: Dr. Scott Heggen
 ######################################################################
-
 import random
 from time import sleep
 
@@ -63,23 +62,8 @@ def end_story(user):
 
 
 def team_1_adv():
-    global dead
-    direction=input("Which way you gon go? [East/West]\n")
-    if direction == "East":
-        # Bravo!
-        print("You are in front of Building 1 and Building 2, both are gigantic and luxurious.")
-    building = input("Which building would you pick? [Building 1/Building 2] \n")
-    if building == "Building 1":
-        # Smart Choice
-        print("Seems someone has a surprise for you...")
-        print("WOW! Welcome to the wonderland where you will be presented a 32 carat diamond Worth $150,000.")
-        dead = False
-    else: # elif building == "Building 2":
-        # Bad Choice
-        print("Welcome to the dragon's home where no one ever survives.")
-        print("You are trying to escape, but the door behind you is already shut, you have no option but wait on the dragon.")
-        dead = True
-    are_you_dead(dead)
+    pass
+    # TODO Add your code here
 
 
 def team_2_adv():
@@ -93,50 +77,12 @@ def team_3_adv():
 
 
 def team_4_adv():
-    # https://github.com/spring-2018-csc-226/t1-choose-your-own-adventure-berucha-susan
-    # Team 4
-    print()
-    global dead
-    sleep(delay)
-    print("You now have three doors in front of you. The first door says, 'ULTIMATE DEATH'. The second door says, 'FREEDOM'. The last door say, 'HAPPINESS AWAITS'.")
-    door = input("Which door do you dare pick? [First/Second/Third]")
-    sleep(delay)
-
-    print()
-    if door == "First":
-        # Good Choice!
-        print("Hahaha, you Daredevil!")
-        print("You cannot be fooled.. or were you ready for this story to be over?")
-        print("Either way, you have found your way to FREEDOM!")
-        sleep(delay)
-        print()
-    elif door == "Second":
-        # Ohhh, better luck next time!
-        print("Ahhhh...")
-        print("Did I say 'Freedom'??")
-        print("I meant DEATH!!!")
-        print("You enter through the door and fall into lava.")
-        print("Look on the bright side, at least you died quickly!")
-        dead = True
-        sleep(delay)
-        print()
-    else:
-        # Neutral choice
-        print("You enter through the door and you are in a land of puppies and kitties! Lucky you!")
-        print("Told you happiness awaits!")
-        print("However, the door disappears behind you and now you have to still find your way out to freedom.")
-        print("Hope you don't have allergies!")
-    sleep(delay)
-
-    if dead:
-        quit()
-        print("Good luck on your next adventure!")
-
-
+    pass
+    # TODO Add your code here
 
 
 def team_5_adv():
-     # TODO Add your code here
+    # TODO Add your code here
     # The next chapter
     dead = False
     direction = input("Which direction would you like to go now? [North/South/East/West]")
@@ -166,7 +112,6 @@ def team_5_adv():
     if dead == True:
         quit()
 
-
 def team_6_adv():
     pass
     # TODO Add your code here
@@ -183,44 +128,7 @@ def team_8_adv():
 
 
 def team_9_adv():
-    def choice_1():
-        print("It's a trap! You were forced to attend Berea College for 4 years, get a decent job, and died at the age of 102.")
-        dead = True
-    def choice_2():
-        print("You sit in the chair and you wake up 3 hours later, you just wasted 3 hours")
-    def choice_3():
-        print("As you walk away, you find some sneakers with +5 jump on your path.")
-        sleep(delay*2)
-        print("You try to jump with your new +5 sneakers, you jump and quickly find yourself free from the gravity, your journey should go mush quicker now.")
-
-
-
-
-    def main_9(): # Our main function for our chapter to help us organize.
-        print("")
-        print("You see a chair to you left, 'odd place for a chair,' you think.")
-        sleep(delay*2)
-        print("")
-        print("To your right you see a Berea College official hat signed by President Lyle Roelofs, worth $34.29 on eBay")
-        sleep(delay*3)
-        choice = input("Do you sit in the chair, or pick up the hat? [Pick up hat/Sit in chair/Walk away]")
-        choice = choice.lower()
-        while choice != "pick up hat" and choice != "sit in chair" and choice != "walk away":
-            choice = input("Do you sit in the chair, or pick up the hat? [Pick up hat/Sit in chair/walk away]")
-            choice = choice.lower()
-
-
-
-            # Different choice outcomes are defined as functions.
-        if choice == "pick up hat":
-            choice_1()
-        elif choice == "sit in chair":
-            choice_2()
-        elif choice == "walk away":
-            choice_3()
-        if dead ==True:
-            quit()
-    main_9()
+    pass
     # TODO Add your code here
 
 
@@ -245,35 +153,8 @@ def team_13_adv():
 
 
 def team_14_adv():
-    global dead
-    print("You've come to across two separate tunnels.")
-    print()
-    direction = input("Which way do you go? (Left/Right/Go Back)")
-    if direction == "Left":
-        #Bad choice
-        print("OH NO! The cave collapsed behind you. You'll survive for two more days before dying from lack of oxygen.")
-        dead = True
-
-    elif direction == "Right":
-        #Good choice
-        print("You found a sandwich, gained 10 HP.")
-
-    elif direction == "Go Back":
-        #Neutral choice
-        print("You chickened out! You're still stuck wandering the cave.")
-
-    else:
-        print("You find a wall with a combination lock on it.")
-        die = int (input("Please enter a number 0-100"))
-        if die >= 50:
-            print("You enter the wrong combination and the walls close in around you.")
-            dead = True
-        elif die <= 49:
-            print("The door opens and you continue deeper into the cave.")
-    # TODO Don't forget to check if your user is dead at the end of your chapter!
-    if dead == True:
-        print("You died")
-        quit()
+    pass
+    # TODO Add your code here
 
 
 def team_15_adv():
