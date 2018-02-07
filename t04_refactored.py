@@ -284,7 +284,66 @@ def team_6_adv():
 
 def team_7_adv():
     pass
-    # TODO Add your code here
+
+
+    direction = input("Would you like to go deeper into the cave or back to beginning?[deeper/back to beginning]")
+
+    if direction == "deeper":
+        # oh... good choice
+
+        print("You find two paths one east and one west.")
+        sleep(delay)
+        direction = input("Which do you pick? [east/west]")
+
+        if direction == "west":
+            # good choice
+            sleep(delay)
+            print("There is a torch lighting up the cavern you find yourself in.")
+            sleep(delay)
+            print()
+            print("You pick up the torch so it can help you navigate your way through the darkness.")
+            sleep(delay)
+
+        elif direction == "east":
+            # bad Choice
+            print("There is a torch on the wall. You pick it up to help you navigate through the dark.")
+            sleep(delay)
+            print()
+            print("In the light of the torch you can see a shiny object.")
+            print()
+            direction = input("Do you want to pick up object or ignore object? [pick up object/ignore Object]")
+            if direction == "pick up object":
+                sleep(delay)
+                print("The object is a large golden lamp.")
+                print()
+                print("You rub the lamp and a colorful smoke spills out of the spout.")
+                sleep(delay)
+                print("The smoke stinks and you are feeling sleepy.")
+                print()
+                sleep(delay)
+                print("You fall asleep instantly and hit your head on the cave floor.")
+                print()
+                sleep(delay)
+                print("You are dead.")
+
+            if dead:
+                quit()
+
+            if direction == "ignore object":
+                sleep(delay)
+                print("You see a light through a crack in the cave wall.")
+                print("You walk towards it and kick the rubble that was blocking the light.")
+                sleep(delay)
+                print()
+                print("You crawl out of the cave blinking in the bright sunlight. You are free at last.")
+                print()
+                print("Congratulations!")
+
+
+    if direction == "back to beginning":
+        # neutral choice
+        print("You decide to return to the beginning of your adventure.")
+        quit()
 
 
 def team_8_adv():
