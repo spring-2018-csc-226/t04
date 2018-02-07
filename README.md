@@ -1,7 +1,9 @@
 # T04: Adventures in Gitland
 
 Name 1: David Gonzalez
+
 Name 2: Arlee Dailey
+
 Name 3 (if needed): ____________
 
 Repository Link: https://github.com/spring-2018-csc-226/t04.git
