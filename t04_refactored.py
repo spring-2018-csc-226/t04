@@ -337,7 +337,7 @@ def team_9_adv():
 def team_10_adv():
     global dead
 
-    print("You encounter a set of three doors, which door do you take? [Door 1/Door 2/Door 3]")
+    print("You encounter a set of two doors, which door do you take? [Door 1/Door 2]")
     direction = input()
     
     if direction == "Door 1":
@@ -353,38 +353,12 @@ def team_10_adv():
             print("He tells you the path lies behind Door 1, and you continue on your quest.")
         elif num_guess == 8:
             print("The goat is angered by your audacity at such an invalid attempt. I'm sorry, but he has eaten you.")
+            dead = True
         else:
             print("The goat is angered by your ignorance. I'm sorry, but he has eaten you.")
-            dead == True
+            dead = True
         if dead:
             quit()
-
-    else:
-        print("That was a strange choice.")
-        print("There's a goat. He is now your companion.")
-        print("Please select one of the other doors. [Door 1/Door 2]")
-        direction = input()
-    
-        if direction == "Door 1":
-            print("You have selected Door 1.")
-            print("There is a path that leads you further in your quest.")
-        elif direction == "Door 2":
-            print("You have selected Door 2.")
-            print("Oh no! There's a man-eating goat!")
-            print("If you can guess his favorite number, then he will not eat you.")
-            num_guess = int(input("What do you think it is?"))
-            if num_guess <= 8 or num_guess >= 8:
-                print("The goat is impressed with your knowledge of astrology, a skill that totally has an actual purpose.")
-                print("He tells you the path lies behind Door 1, and you continue on your quest.")
-            elif num_guess == 8:
-                print("The goat is angered by your audacity at such an invalid attempt. I'm sorry, but he has eaten you. :( He left your goat though!")
-            else:
-                print("The goat is angered by your ignorance. I'm sorry, but he has eaten you. :( He left your goat though!")
-                
-        else:
-            print("Your goat companion decided you should go through Door 1.")
-            print("There is a path that leads you further in your quest.")
-        quit()
         # TODO Add your code here
 
 
