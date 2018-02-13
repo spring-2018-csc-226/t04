@@ -468,8 +468,31 @@ def team_9_adv():
 
 
 def team_10_adv():
-    pass
-    # TODO Add your code here
+    global dead
+
+    print("You encounter a set of two doors, which door do you take? [Door 1/Door 2]")
+    direction = input()
+    
+    if direction == "Door 1":
+        print("You have selected Door 1.")
+        print("There is a path that leads you further in your quest.")
+    elif direction == "Door 2":
+        print("You have selected Door 2.")
+        print("Oh no! There's a man-eating goat!")
+        print("If you can guess his favorite number, then he will not eat you.")
+        num_guess = int(input("What do you think it is?"))
+        if num_guess > 8 or num_guess < 8:
+            print("The goat is impressed with your knowledge of astrology, a skill that totally has an actual purpose.")
+            print("He tells you the path lies behind Door 1, and you continue on your quest.")
+        elif num_guess == 8:
+            print("The goat is angered by your audacity at such an invalid attempt. I'm sorry, but he has eaten you.")
+            dead = True
+        else:
+            print("The goat is angered by your ignorance. I'm sorry, but he has eaten you.")
+            dead = True
+        if dead:
+            quit()
+        # TODO Add your code here
 
 
 def team_11_adv():
